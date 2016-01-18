@@ -1,0 +1,2 @@
+# FirstGrailsApp
+First Grails app
