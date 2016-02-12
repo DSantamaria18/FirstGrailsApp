@@ -17,7 +17,9 @@ class EventSpec extends Specification {
 
     void "test toString"() { 
     	when: "a tekEvent has a name and a city" 
-    		def event = new Event(name:'Groovy One', city: 'San Francisco', organizer: 'John Doe')
+    		def event = new Event(name:'Groovy One', 
+    								city: 'San Francisco', 
+    								organizer:  [fullName: 'John Doe'] as User)
 	
 		then: "the toString method will combine them." 
 			event.toString() == 'Groovy One, San Francisco'
