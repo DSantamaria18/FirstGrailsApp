@@ -11,10 +11,10 @@ class Sponsor {
 		name 
 	}
 
-	static hasMany=[events : Event] 
+	static hasMany=[events : Event,
+					sponsorships : Sponsorship
+		] 
 	static belongsTo = Event
-
-	static hasMany = [sponsorships : Sponsorship]
 
 	static constraints = { 
 		name blank: false 

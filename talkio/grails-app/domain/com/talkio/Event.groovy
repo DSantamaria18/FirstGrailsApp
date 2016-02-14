@@ -13,7 +13,9 @@ class Event {
     static hasMany = [	volunteers : User, 
     					respondents : String, 
     					sponsors : Sponsor, 
-    					sponsorships : Sponsorship
+    					sponsorships : Sponsorship,
+    					tasks : Task,
+    					messages : Msg
     				]
 
     String toString(){ 
@@ -30,5 +32,7 @@ class Event {
     	endDate()
     	volunteers nullable: true 
     	sponsorships nullable: true
+    	tasks nullable: true
+    	messages nullable: true
     }
 }
